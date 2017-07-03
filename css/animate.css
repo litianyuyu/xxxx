@@ -1,0 +1,33 @@
+/*第一页*/
+.pt_ToTop{
+    animation: toTop 0.5s both;
+}
+@keyframes toTop {
+    0%{}
+    100%{transform: translateY(-100%)}
+}
+/*第二页*/
+.pt_fromBottom{
+    animation: fromBottom 0.5s both;
+}
+@keyframes fromBottom {
+    0%{transform: translateY(100%)}
+    100%{}
+}
+
+
+.pt_toBottom{
+    animation: toBottom 0.5s both;
+}
+@keyframes toBottom {
+    0%{}
+    100%{transform: translateY(100%)}
+}
+
+.pt_fromTop{
+    animation: fromTop 0.5s both;
+}
+@keyframes fromTop {
+    0%{transform: translateY(-100%)}
+    100%{}
+}

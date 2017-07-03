@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>简介</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <script type="text/javascript" src="js/fontsize.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        *{padding:0;margin:0;}
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        /*.swiper-slide {*/
+            /*text-align: center;*/
+            /*font-size: 18px;*/
+            /*background-color: #dfdfdd;*/
+
+             /*Center:slide text vertically*/
+            /*display: -webkit-box;*/
+            /*display: -ms-flexbox;*/
+            /*display: -webkit-flex;*/
+            /*display: flex;*/
+            /*-webkit-box-pack: center;*/
+            /*-ms-flex-pack: center;*/
+            /*-webkit-justify-content: center;*/
+            /*justify-content: center;*/
+            /*-webkit-box-align: center;*/
+            /*-ms-flex-align: center;*/
+            /*-webkit-align-items: center;*/
+            /*align-items: center;*/
+        /*}*/
+        .wei{
+            font: 66px 微软雅黑;
+            color:black;
+            padding-left: 40%;
+            padding-top:35%;
+        }
+        .wei1{
+            font: 66px 微软雅黑;
+            color: black;
+            padding-left: 40%;
+        }
+        .wei2{
+            font: 66px 微软雅黑;
+            color:black;
+            padding-left: 40%;
+        }
+        .wei3{
+            font: 66px 微软雅黑;
+            color: black;
+            padding-left: 40%;
+        }
+        .img1{width: 100%;}
+        .img2{width:75%;height:16%;position: absolute;left: 20%;top:5%;}
+        .ge{font:0.6rem 黑体;color:white;position: absolute;left:26%;top:8%;}
+        .img3{position: absolute;left: 2.6rem;top:2rem;}
+        .img4{position: absolute;left: 2.0rem;top:3rem;animation: rr 10s infinite linear;}
+        @keyframes rr{
+            0%{transform:rotate(360deg);}
+            100%{}
+        }
+        .img5{width: 120px;height: 120px;border-radius: 50%;position: absolute;left: 2.28rem;top:3.3rem;}
+        .img6{position: absolute;left: 0rem;bottom:0rem;}
+        .img7{position: absolute;left: 2rem;bottom:0.5rem;}
+        .img8{position: absolute;left: 0rem;bottom:2.5rem;}
+        .img9{position: absolute;left:5.5rem;bottom:1rem;}
+        .img10{position: absolute;left:4.6rem;bottom:3.5rem;}
+        .img11{position: absolute;left:2.8rem;bottom:3rem;}
+
+
+        .img12{position: absolute;left:0rem;bottom:0rem;}
+
+        .img13{position: absolute;left:0.5rem;top:1rem;}
+        .img14{position: absolute;left:0.5rem;top:2rem;}
+        .img15{position: absolute;left:0.5rem;top:3rem;}
+        .img16{position: absolute;left:0.5rem;top:4rem;}
+        .p1{font:0.5rem 黑体;color:white;position: absolute;left:0.6rem;top:1.1rem;}
+        .p2{font:0.5rem 黑体;color:white;position: absolute;left:0.6rem;top:2.1rem;}
+        .p3{font:0.5rem 黑体;color:white;position: absolute;left:0.6rem;top:3.1rem;}
+        .p4{font:0.5rem 黑体;color:white;position: absolute;left:0.6rem;top:4.1rem;}
+        .img17{position: absolute;left:2.3rem;top:0.5rem;}
+        .img18{position: absolute;left:1.8rem;top:2.5rem;}
+        .img19{position: absolute;left:2.6rem;top:4.5rem;}
+        .img20{position: absolute;left:1.8rem;top:6.5rem;}
+        .img21{position: absolute;left:3rem;top:8.5rem;}
+
+        .p5{font:0.32rem 黑体;color:white;position: absolute;left:2.9rem;top:0.95rem;}
+        .p6{font:0.32rem 黑体;color:white;position: absolute;left:2.8rem;top:3rem;}
+        .p7{font:0.32rem 黑体;color:white;position: absolute;left:2.6rem;top:5rem;}
+        .p8{font:0.32rem 黑体;color:white;position: absolute;left:2.3rem;top:6.9rem;}
+        .p9{font:0.32rem 黑体;color:white;position: absolute;left:3.2rem;top:9rem;}
+
+        .img22{position: absolute;left:2.5rem;bottom:0rem;}
+        .img23{position: absolute;left:1.6rem;bottom:0.5rem;}
+        .img24{position: absolute;left:1rem;top:0.8rem;}
+        .img25{position: absolute;left:2.2rem;top:1.4rem;}
+        .img26{position: absolute;left:3rem;top:0.8rem;}
+
+        .img27{position: absolute;right:0.6rem;top:1rem;}
+        .img28{position: absolute;right:0.6rem;top:2rem;}
+        .img29{position: absolute;right:0.6rem;top:3rem;}
+        .img30{position: absolute;right:0.6rem;top:4rem;}
+
+        .p10{font:0.5rem 黑体;color:white;position: absolute;left:5.2rem;top:1.1rem;}
+        .p11{font:0.5rem 黑体;color:white;position: absolute;left:5.2rem;top:2.1rem;}
+        .p12{font:0.5rem 黑体;color:white;position: absolute;left:5.2rem;top:3.1rem;}
+        .p13{font:0.5rem 黑体;color:white;position: absolute;left:5.2rem;top:4.1rem;}
+
+        .p14{font:0.5rem 黑体;position: absolute;left:0.3rem;top:3rem;}
+        .p15{font:0.5rem 黑体;position: absolute;left:0.3rem;top:4rem;}
+        .p16{font:0.5rem 黑体;position: absolute;left:0.3rem;top:5.3rem;}
+        .p17{font:0.5rem 黑体;position: absolute;left:0.3rem;top:6.3rem;}
+        .p18{font:0.5rem 黑体;position: absolute;left:0.3rem;top:7.3rem;}
+
+        .img31{position: absolute;left:0rem;bottom:0rem;}
+        .img32{position: absolute;left:0rem;bottom:2rem;}
+
+        .img33{position: absolute;left:0.5rem;top:1rem;}
+        .img34{position: absolute;left:0.5rem;top:2rem;}
+        .img35{position: absolute;left:0.5rem;top:3rem;}
+        .img36{position: absolute;left:0.5rem;top:4rem;}
+
+        .p19{font:0.5rem 黑体;color:white;position: absolute;left:0.6rem;top:1.1rem;}
+        .p20{font:0.5rem 黑体;color:white;position: absolute;left:0.6rem;top:2.1rem;}
+        .p21{font:0.5rem 黑体;color:white;position: absolute;left:0.6rem;top:3.1rem;}
+        .p22{font:0.5rem 黑体;color:white;position: absolute;left:0.6rem;top:4.1rem;}
+
+        .img37{width:2rem;height: 3rem;position: absolute;left:2.5rem;top:0.2rem;}
+        .img38{width:2rem;height: 3rem;position: absolute;left:3rem;top:3.5rem;}
+        .img39{width:2rem;height: 3rem;position: absolute;left:4rem;top:7rem;}
+
+        .img40{position: absolute;left:0rem;top:5.5rem;}
+        .img41{position: absolute;right:0rem;top:0rem;}
+
+        .p23{font:0.5rem 黑体;color:white;position: absolute;left:2.7rem;top:0.8rem;}
+        .p24{font:0.5rem 黑体;color:white;position: absolute;left:2.5rem;top:2.8rem;}
+        .p25{font:0.5rem 黑体;color:white;position: absolute;left:3.2rem;top:4.8rem;}
+        .p26{font:0.5rem 黑体;color:white;position: absolute;left:2.5rem;top:6.8rem;}
+        .p27{font:0.5rem 黑体;color:white;position: absolute;left:3.2rem;top:8.8rem;}
+
+        .img50{position: absolute;left:1.4rem;top:1rem;}
+        .img51{position: absolute;left:1.4rem;top:2.5rem;}
+        .img52{position: absolute;left:1.4rem;top:4rem;}
+        .img53{position: absolute;left:1.4rem;top:5.5rem;}
+        .p50{position: absolute;left:2rem;top:1.28rem;font-size: 30px;color:red;}
+        .p51{font:0.35rem 黑体;color:white;position: absolute;left:1.8rem;top:2.9rem;}
+        .p52{font:0.3rem 黑体;color:white;position: absolute;left:1.8rem;top:4.45rem;}
+        .p53{font:0.3rem 黑体;color:white;position: absolute;left:1.8rem;top:5.95rem;}
+        .music{
+            display: block;
+            background: url("img/music.png") no-repeat;
+            width: 0.6rem;
+            height: 0.6rem;
+            position: fixed;
+            top: 0.5rem;
+            right: 0.5rem;
+            background-size: 0.6rem 0.6rem;
+            z-index: 999;
+        }
+        .xuanzhuan{animation:zhuan 3s infinite linear;}
+        @keyframes zhuan {
+            0%{transform: rotatez(-360deg)}
+        }
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<span class="music xuanzhuan"></span>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="img/fdfd.png" class="img1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <img src="img/nmh.png" class="img2 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="3.6s">
+            <img src="img/kop.png" class="img3 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="4s">
+            <img src="img/vgrt.png" class="img4 ani" swiper-animate-effect="" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <img src="img/fghd.jpg" class="img5 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="0.3s">
+            <img src="img/ww.png" class="img6 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/dd.png" class="img7 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3s">
+            <img src="img/dsdfbs.png" class="img8 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s">
+            <img src="img/dfhfd.png" class="img9 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="7s">
+            <img src="img/maibi.png" class="img10 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="5.6s">
+            <img src="img/vgf.png" class="img11 ani" swiper-animate-effect=" fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="6.5s">
+            <p class="ge ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="5s">个人简历</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/rtyu.png" class="img12 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s">
+
+            <img src="img/rthu.png" class="img13 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <img src="img/rthu.png" class="img14 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+            <img src="img/rthu.png" class="img15 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.9s">
+            <img src="img/rthu.png" class="img16 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.3s">
+            <p class="p1 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.4s">个</p>
+            <p class="p2 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.9s">人</p>
+            <p class="p3 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.4s">信</p>
+            <p class="p4 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.9s">息</p>
+            <img src="img/dfgjh.png" class="img17 ani" swiper-animate-effect="bounceInRight " swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <img src="img/dfgjh.png" class="img18 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <img src="img/dfgjh.png" class="img19 ani" swiper-animate-effect="bounceInRight " swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <img src="img/dfgjh.png" class="img20 ani" swiper-animate-effect="bounceInLeft " swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <img src="img/dfgjh.png" class="img21 ani" swiper-animate-effect="bounceInRight " swiper-animate-duration="2s" swiper-animate-delay="2s">
+
+            <p class="p5 ani" swiper-animate-effect="bounceInLeft " swiper-animate-duration="2s" swiper-animate-delay="2s">姓名:李天宇</p>
+            <p class="p6 ani" swiper-animate-effect="bounceInRight " swiper-animate-duration="2s" swiper-animate-delay="2s">性别:男</p>
+            <p class="p7 ani" swiper-animate-effect="bounceInLeft " swiper-animate-duration="2s" swiper-animate-delay="2s">出生日期:1997.11.25</p>
+            <p class="p8 ani" swiper-animate-effect="bounceInRight " swiper-animate-duration="2s" swiper-animate-delay="2s">专业:web前端</p>
+            <p class="p9 ani" swiper-animate-effect="bounceInLeft " swiper-animate-duration="2s" swiper-animate-delay="2s">毕业:泊头职业学院</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/afgsdh.png" class="img22 ani" swiper-animate-effect="fadeIn " swiper-animate-duration="1s" swiper-animate-delay="0s">
+            <img src="img/wtt.png" class="img23 ani" swiper-animate-effect="fadeIn " swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/qq.png" class="img24 ani" swiper-animate-effect=" fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">
+            <img src="img/laq.png" class="img25 ani" swiper-animate-effect="fadeInLeft " swiper-animate-duration="1s" swiper-animate-delay="3s">
+            <img src="img/dsfdsfsd.png" class="img26 ani" swiper-animate-effect="fadeInLeft " swiper-animate-duration="1s" swiper-animate-delay="4s">
+
+            <img src="img/rthu.png" class="img27 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <img src="img/rthu.png" class="img28 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+            <img src="img/rthu.png" class="img29 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.9s">
+            <img src="img/rthu.png" class="img30 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.3s">
+
+            <p class="p10 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">主</p>
+            <p class="p11 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="2s">修</p>
+            <p class="p12 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">课</p>
+            <p class="p13 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="2s">程</p>
+
+            <p class="p14 ani" swiper-animate-effect="  bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="3s">·计算机技术基础</p>
+            <p class="p15 ani" swiper-animate-effect="  bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="3.5s">·HTML5与CSS3基础</p>
+            <p class="p16 ani" swiper-animate-effect="  bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="4s">·CSS+DIV网页样式与布局</p>
+            <p class="p17 ani" swiper-animate-effect="  bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="4.5s">·JavaScript客户端编程</p>
+            <p class="p18 ani" swiper-animate-effect="  bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="5s">·HTML网页设计与实践</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/aqw.png" class="img31 ani" swiper-animate-effect="fadeIn  " swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+            <img src="img/jdsdf.png" class="img32 ani" swiper-animate-effect="fadeIn  " swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/rthu.png" class="img33 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <img src="img/rthu.png" class="img34 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+            <img src="img/rthu.png" class="img35 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.9s">
+            <img src="img/rthu.png" class="img36 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.3s">
+            <p class="p19 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.4s">作</p>
+            <p class="p20 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.9s">品</p>
+            <p class="p21 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.4s">展</p>
+            <p class="p22 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.9s">示</p>
+
+                    <a href="###"><img src="img/dfvf.png" class="img37 ani" swiper-animate-effect="bounceInRight " swiper-animate-duration="1s" swiper-animate-delay="2.5s"></a>
+                    <a href="###"><img src="img/jd.PNG" class="img38 ani" swiper-animate-effect="bounceInLeft " swiper-animate-duration="1s" swiper-animate-delay="3.5s"></a>
+                    <a href="###"><img src="img/nvzhuang.PNG" class="img39 ani" swiper-animate-effect="bounceInLeft  " swiper-animate-duration="1s" swiper-animate-delay="4.5s"></a>
+
+        </div>
+        <div class="swiper-slide">
+            <img src="img/aqw.png" class="img31 ani" swiper-animate-effect="fadeIn  " swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+            <img src="img/jdsdf.png" class="img32 ani" swiper-animate-effect="fadeIn  " swiper-animate-duration="1s" swiper-animate-delay="1s">
+
+            <img src="img/aswe.png" class="img40 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/uit.png" class="img41 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="1s">
+
+
+            <img src="img/rthu.png" class="img33 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <img src="img/rthu.png" class="img34 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+            <img src="img/rthu.png" class="img35 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.9s">
+            <img src="img/rthu.png" class="img36 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.3s">
+            <p class="p19 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.4s">自</p>
+            <p class="p20 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.9s">我</p>
+            <p class="p21 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.4s">评</p>
+            <p class="p22 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.9s">价</p>
+
+            <img src="img/dfgjh.png" class="img17 ani" swiper-animate-effect="bounceInRight " swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <img src="img/dfgjh.png" class="img18 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <img src="img/dfgjh.png" class="img19 ani" swiper-animate-effect="bounceInRight " swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <img src="img/dfgjh.png" class="img20 ani" swiper-animate-effect="bounceInLeft " swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <img src="img/dfgjh.png" class="img21 ani" swiper-animate-effect="bounceInRight " swiper-animate-duration="2s" swiper-animate-delay="2s">
+
+
+
+
+            <p class="p23 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">性格开朗</p>
+            <p class="p24 ani" swiper-animate-effect="bounceInLeft " swiper-animate-duration="1s" swiper-animate-delay="3s">为人诚恳</p>
+            <p class="p25 ani" swiper-animate-effect=" bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">乐观向上</p>
+            <p class="p26 ani" swiper-animate-effect=" bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="3s">热爱音乐</p>
+            <p class="p27 ani" swiper-animate-effect="bounceInRight " swiper-animate-duration="1s" swiper-animate-delay="3s">适应能力强</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/aqw.png" class="img31 ani" swiper-animate-effect="fadeIn  " swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+            <img src="img/jdsdf.png" class="img32 ani" swiper-animate-effect="fadeIn  " swiper-animate-duration="1s" swiper-animate-delay="1s">
+
+            <img src="img/dfgjh.png" class="img50 ani" swiper-animate-effect=" bounceInLeft " swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/dfgjh.png" class="img51 ani" swiper-animate-effect=" bounceInRight " swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/dfgjh.png" class="img52 ani" swiper-animate-effect=" bounceInLeft " swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/dfgjh.png" class="img53 ani" swiper-animate-effect=" bounceInRight " swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/dd.png" class="img7 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/dfhfd.png" class="img9 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="7s">
+
+            <p class="p50 ani"swiper-animate-effect=" bounceInRight " swiper-animate-duration="1s" swiper-animate-delay="1s">联系方式</p>
+
+            <p class="p51 ani"swiper-animate-effect=" bounceInLeft " swiper-animate-duration="1s" swiper-animate-delay="1s">qq：290175770</p>
+
+            <p class="p52 ani"swiper-animate-effect=" bounceInRight " swiper-animate-duration="1s" swiper-animate-delay="1s">微信：15031389622</p>
+
+            <p class="p53 ani"swiper-animate-effect=" bounceInLeft " swiper-animate-duration="1s" swiper-animate-delay="1s">手机：15031389622</p>
+
+        </div>
+        <div class="swiper-slide">
+            <p class="wei ani"
+               swiper-animate-effect="bounceInLeft"
+               swiper-animate-duration="2s"
+               swiper-animate-delay="0s"
+                    >谢</p>
+            <p class="wei1 ani"
+               swiper-animate-effect=" bounceInRight"
+               swiper-animate-duration="2s"
+               swiper-animate-delay="0s"
+                    >谢</p>
+            <p class="wei2 ani"
+               swiper-animate-effect=" bounceInLeft"
+               swiper-animate-duration="2s"
+               swiper-animate-delay="0s"
+                    >欣</p>
+            <p class="wei3 ani"
+               swiper-animate-effect=" bounceInRight"
+               swiper-animate-duration="2s"
+               swiper-animate-delay="0s"
+                    >赏</p>
+            <img src="img/uit.png" class="img41 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/aqw.png" class="img31 ani" swiper-animate-effect="fadeIn  " swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+            <img src="img/jdsdf.png" class="img32 ani" swiper-animate-effect="fadeIn  " swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/dd.png" class="img7 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="img/dfhfd.png" class="img9 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="7s">
+        </div>
+        <audio src="img/fafafa.mp3" id="yy" autoplay></audio>
+    </div>
+    <!-- Add Pagination -->
+    <!--<div class="swiper-pagination"></div>-->
+</div>
+
+<!-- Swiper JS -->
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.animate1.0.2.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    $("body>span").tap(
+            function(){
+                $(this).toggleClass("xuanzhuan");
+                if($("#yy").get(0).paused){
+                    $("#yy").get(0).play();
+                }
+                else{
+                    $("#yy").get(0).pause();
+                }
+            }
+    );
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical',
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+    });
+</script>
+</body>
+</html>

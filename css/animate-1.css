@@ -1,0 +1,32 @@
+
+.music_ani{
+    animation:music_ani_k 5s linear infinite;
+}
+@keyframes music_ani_k {
+    0%{}
+    100%{transform: rotateZ(360deg)}
+}
+
+.i-3{
+    animation:icon_ani_k 1s linear infinite;
+}
+@keyframes icon_ani_k {
+    0%{transform: translateY(0rem)}
+    15%{transform: translateY(-0.2rem)}
+    100%{transform: translateY(-0.5rem)}
+}
+
+.i-1{
+    animation:zz 1s linear ;
+}
+@keyframes zz {
+    0%{transform: translateY(-0.5rem)}
+    100%{transform: translateY(0rem)}
+}
+.i-2{
+    animation:aa 1s linear ;
+}
+@keyframes aa {
+    0%{transform: translateX(-0.5rem)}
+    100%{transform: translateX(0rem)}
+}
